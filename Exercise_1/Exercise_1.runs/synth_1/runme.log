@@ -1,0 +1,403 @@
+
+*** Running vivado
+    with args -log led_blink.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source led_blink.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source led_blink.tcl -notrace
+Command: synth_design -top led_blink -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19494 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1399.379 ; gain = 83.914 ; free physical = 111 ; free virtual = 2565
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'led_blink' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:41]
+INFO: [Synth 8-3491] module 'clk_divider' declared at '/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/clk_divider.vhd:34' bound to instance 'CLK_DIV' of component 'clk_divider' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/clk_divider.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/clk_divider.vhd:47]
+INFO: [Synth 8-3491] module 'counter_1' declared at '/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_1.vhd:36' bound to instance 'CNT_1' of component 'counter_1' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'counter_1' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_1.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'counter_1' (2#1) [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_1.vhd:42]
+INFO: [Synth 8-3491] module 'counter_2' declared at '/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_2.vhd:34' bound to instance 'CNT_2' of component 'counter_2' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'counter_2' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_2.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'counter_2' (3#1) [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/counter_2.vhd:40]
+WARNING: [Synth 8-614] signal 'led_out_counter2' is read in the process but is not in the sensitivity list [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:98]
+WARNING: [Synth 8-614] signal 'led_out_counter1' is read in the process but is not in the sensitivity list [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:98]
+INFO: [Synth 8-256] done synthesizing module 'led_blink' (4#1) [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:41]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1445.129 ; gain = 129.664 ; free physical = 179 ; free virtual = 2579
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1445.129 ; gain = 129.664 ; free physical = 182 ; free virtual = 2581
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1445.129 ; gain = 129.664 ; free physical = 182 ; free virtual = 2581
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc:56]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc:61]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc:66]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc:69]
+Finished Parsing XDC File [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/constrs_1/new/exe_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/led_blink_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/led_blink_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.660 ; gain = 0.000 ; free physical = 126 ; free virtual = 2341
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1772.660 ; gain = 0.000 ; free physical = 126 ; free virtual = 2341
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.660 ; gain = 0.000 ; free physical = 126 ; free virtual = 2341
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.660 ; gain = 0.000 ; free physical = 126 ; free virtual = 2341
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 197 ; free virtual = 2413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 197 ; free virtual = 2413
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 198 ; free virtual = 2414
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "sig_1Hz" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "sig_10Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_100Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_1KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_10KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_100KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sig_1MHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "sig_5MHz" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'clk_counter2_reg' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:96]
+WARNING: [Synth 8-327] inferring latch for variable 'clk_counter1_reg' [/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd:95]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 186 ; free virtual = 2406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 8     
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module led_blink 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 2     
+Module clk_divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     23 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               26 Bit    Registers := 1     
+	               23 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     26 Bit        Muxes := 1     
+	   2 Input     23 Bit        Muxes := 1     
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module counter_1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   9 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module counter_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_1MHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "CLK_DIV/sig_5MHz" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "CLK_DIV/sig_1Hz" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_10Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_100Hz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_1KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_10KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLK_DIV/sig_100KHz" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'CNT_2/signal_led_reg[1]' (FDC) to 'CNT_2/signal_led_reg[6]'
+INFO: [Synth 8-3886] merging instance 'CNT_2/signal_led_reg[2]' (FDC) to 'CNT_2/signal_led_reg[5]'
+INFO: [Synth 8-3886] merging instance 'CNT_2/signal_led_reg[3]' (FDC) to 'CNT_2/signal_led_reg[4]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:26 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 168 ; free virtual = 2395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 107 ; free virtual = 2265
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 107 ; free virtual = 2265
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:36 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 125 ; free virtual = 2266
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    25|
+|3     |LUT1   |     8|
+|4     |LUT2   |    56|
+|5     |LUT3   |     9|
+|6     |LUT4   |    49|
+|7     |LUT5   |    24|
+|8     |LUT6   |    47|
+|9     |FDCE   |   143|
+|10    |FDPE   |     2|
+|11    |LD     |     2|
+|12    |IBUF   |     9|
+|13    |OBUF   |     8|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+------------+------+
+|      |Instance  |Module      |Cells |
++------+----------+------------+------+
+|1     |top       |            |   383|
+|2     |  CLK_DIV |clk_divider |   309|
+|3     |  CNT_1   |counter_1   |    24|
+|4     |  CNT_2   |counter_2   |    26|
++------+----------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.660 ; gain = 457.195 ; free physical = 126 ; free virtual = 2267
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 1772.660 ; gain = 129.664 ; free physical = 183 ; free virtual = 2324
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:37 . Memory (MB): peak = 1772.668 ; gain = 457.195 ; free physical = 183 ; free virtual = 2324
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.668 ; gain = 0.000 ; free physical = 121 ; free virtual = 2264
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:40 . Memory (MB): peak = 1772.668 ; gain = 457.289 ; free physical = 177 ; free virtual = 2320
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1772.668 ; gain = 0.000 ; free physical = 177 ; free virtual = 2320
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/narayan/Documents/FPGA/new/Exercise_1/Exercise_1.runs/synth_1/led_blink.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file led_blink_utilization_synth.rpt -pb led_blink_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 27 21:03:47 2019...

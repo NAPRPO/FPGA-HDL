@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 17 08:44:49 2019
+# Process ID: 18265
+# Current directory: /home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_2/project_2.runs/ROM_blk_mem_gen_0_0_synth_1
+# Command line: vivado -log ROM_blk_mem_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM_blk_mem_gen_0_0.tcl
+# Log file: /home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_2/project_2.runs/ROM_blk_mem_gen_0_0_synth_1/ROM_blk_mem_gen_0_0.vds
+# Journal file: /home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_2/project_2.runs/ROM_blk_mem_gen_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source ROM_blk_mem_gen_0_0.tcl -notrace
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP ROM_blk_mem_gen_0_0, cache-ID = b3d4b0ed18ed738b.
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 17 08:45:03 2019...

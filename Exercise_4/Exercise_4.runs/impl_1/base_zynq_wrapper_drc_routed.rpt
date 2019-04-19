@@ -1,0 +1,46 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Wed Apr 17 09:51:15 2019
+| Host         : narayan-Lenovo-B590 running 64-bit Ubuntu 18.04.2 LTS
+| Command      : report_drc -file base_zynq_wrapper_drc_routed.rpt -pb base_zynq_wrapper_drc_routed.pb -rpx base_zynq_wrapper_drc_routed.rpx
+| Design       : base_zynq_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| PDRC-153 | Warning  | Gated clock check | 2          |
++----------+----------+-------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-153#1 Warning
+Gated clock check  
+Net base_zynq_i/led_blink_0/U0/clk_counter1_reg_i_2_n_0 is a gated clock net sourced by a combinational pin base_zynq_i/led_blink_0/U0/clk_counter1_reg_i_2/O, cell base_zynq_i/led_blink_0/U0/clk_counter1_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net base_zynq_i/led_blink_0/U0/clk_counter2_reg_i_2_n_0 is a gated clock net sourced by a combinational pin base_zynq_i/led_blink_0/U0/clk_counter2_reg_i_2/O, cell base_zynq_i/led_blink_0/U0/clk_counter2_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

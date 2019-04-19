@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/imports/OLED_on_ZedBoard/Delay.vhd,1429019023,vhdl,,,,delay,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/imports/OLED_on_ZedBoard/OledExample.vhd,1429019023,vhdl,,,,oledex,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/imports/OLED_on_ZedBoard/OledInit.vhd,1429019023,vhdl,,,,oledinit,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/imports/OLED_on_ZedBoard/PmodOLEDCtrl.vhd,1429019023,vhdl,,,,pmodoledctrl,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/imports/OLED_on_ZedBoard/SpiCtrl.vhd,1429019023,vhdl,,,,spictrl,,,,,,,,
+/home/narayan/Documents/FPGA/OLED_on_ZedBoard/project_1/project_1.srcs/sources_1/ip/charLib/charLib.v,1429019023,verilog,,,,charLib,,,,,,,,

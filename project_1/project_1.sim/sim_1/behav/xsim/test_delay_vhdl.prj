@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_1.srcs/sources_1/imports/OLED_on_ZedBoard/SpiCtrl.vhd" \
+"../../../../project_1.srcs/sources_1/imports/OLED_on_ZedBoard/Delay.vhd" \
+"../../../../project_1.srcs/sources_1/imports/OLED_on_ZedBoard/OledInit.vhd" \
+"../../../../project_1.srcs/sources_1/imports/OLED_on_ZedBoard/OledExample.vhd" \
+"../../../../project_1.srcs/sources_1/imports/OLED_on_ZedBoard/PmodOLEDCtrl.vhd" \
+
+# Do not sort compile order
+nosort

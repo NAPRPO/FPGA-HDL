@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Exercise_1.srcs/sources_1/imports/Desktop/clk_divider.vhd" \
+"../../../../Exercise_1.srcs/sources_1/imports/Desktop/counter_1.vhd" \
+"../../../../Exercise_1.srcs/sources_1/imports/Desktop/counter_2.vhd" \
+"../../../../Exercise_1.srcs/sources_1/imports/Desktop/led_blink.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1555479886">
+  <File Type="VDS-TIMING-PB" Name="PmodOLEDCtrl_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="PmodOLEDCtrl_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="PmodOLEDCtrl.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="PmodOLEDCtrl_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="PmodOLEDCtrl_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="PmodOLEDCtrl_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="PmodOLEDCtrl.vds"/>
+  <File Type="REPORTS-TCL" Name="PmodOLEDCtrl_reports.tcl"/>
+  <File Type="PA-TCL" Name="PmodOLEDCtrl.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/charLib/charLib.xco">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/charLib.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../charLib.coe"/>
+        <Attr Name="ImportTime" Val="1429019023"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/SpiCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../SpiCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1429019023"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/Delay.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Delay.vhd"/>
+        <Attr Name="ImportTime" Val="1429019023"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/OledInit.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OledInit.vhd"/>
+        <Attr Name="ImportTime" Val="1429019023"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/OledExample.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../OledExample.vhd"/>
+        <Attr Name="ImportTime" Val="1554375268"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/PmodOLEDCtrl.vhd">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PmodOLEDCtrl.vhd"/>
+        <Attr Name="ImportTime" Val="1429019023"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/project_2/import_ise_summary.txt">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/import_ise_summary.txt"/>
+        <Attr Name="ImportTime" Val="1554280633"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/OLED_on_ZedBoard/EXE3.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../EXE3.coe"/>
+        <Attr Name="ImportTime" Val="1554373987"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ROM/ROM.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/hdl/ROM_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/ROM/hdl/ROM_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1554375177"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="PmodOLEDCtrl"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/exe3.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ROM_blk_mem_gen_0_0"/>
+</GenRun>
